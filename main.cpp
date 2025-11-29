@@ -8,8 +8,13 @@ int main() {
     string code;
     IntBinaryTree tree;
     cout << "Creating binary search tree" << endl << endl;
+    int f = 0;
     while(getline(file,code)) { 
         tree.insertNode(code);
+        f++;
+        if (f == 10) {
+            break;
+        }
     }
     tree.displayInOrder();
     int input = -1;
@@ -23,6 +28,13 @@ int main() {
             cin >> valToAdd;
             tree.insertNode(valToAdd);
         }
+        else if (input == 2) {
+            string valToDelete;
+            cout << "Enter value to add: ";
+            cin >> valToDelete;
+            tree.remove(valToDelete);
+        }
+        tree.displayInOrder();
     }
     return 0;
 }
