@@ -30,9 +30,15 @@ int main() {
         }
         else if (input == 2) {
             string valToDelete;
-            cout << "Enter value to add: ";
+            cout << "Enter value to delete: ";
             cin >> valToDelete;
             tree.remove(valToDelete);
+        }
+        else if (input == 3) {
+            string valToSearch;
+            cout << "Enter value to search for: ";
+            cin >> valToSearch;
+            tree.searchNode(valToSearch);
         }
         tree.displayInOrder();
     }
