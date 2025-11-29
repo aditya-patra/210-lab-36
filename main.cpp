@@ -12,6 +12,11 @@ int main() {
         tree.insertNode(code);
     }
     tree.displayInOrder();
-
+    int input = -1;
+    while (input != 5) {
+        cout << "Menu: \n  1 - Add Record\n  2 - Delete Record\n  3 - Search Record\n  4 - Modify Records\n  5 - Exit" << endl;
+        cout << "Enter your choice: ";
+        cin >> input;
+    }
     return 0;
 }
