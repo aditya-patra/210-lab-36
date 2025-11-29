@@ -6,16 +6,11 @@ using namespace std;
 int main() {
     ifstream file("codes.txt");
     string code;
-    while(getline(file,code)) { 
-        cout << code << endl;
-        break;
-    }
     IntBinaryTree tree;
-    tree.insertNode("blue");
-    tree.insertNode("green");
-    tree.insertNode("purple");
-    tree.insertNode("black");
-    tree.displayInOrder();
+    cout << "Creating binary search tree " << endl << endl;
+    while(getline(file,code)) { 
+        tree.insertNode(code);
+    }
 
     return 0;
 }
