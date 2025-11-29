@@ -11,6 +11,7 @@ int main() {
         break;
     }
     IntBinaryTree tree;
+    tree.insertNode(8);
     tree.displayInOrder();
 
     return 0;
