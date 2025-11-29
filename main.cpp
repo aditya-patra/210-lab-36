@@ -7,7 +7,7 @@ int main() {
     ifstream file("codes.txt");
     string code;
     IntBinaryTree tree;
-    cout << "Creating binary search tree " << endl << endl;
+    cout << "Creating binary search tree" << endl << endl;
     while(getline(file,code)) { 
         tree.insertNode(code);
     }
