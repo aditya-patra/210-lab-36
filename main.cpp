@@ -11,6 +11,7 @@ int main() {
     while(getline(file,code)) { 
         tree.insertNode(code);
     }
+    tree.displayInOrder();
 
     return 0;
 }
