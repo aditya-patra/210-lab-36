@@ -6,7 +6,7 @@ using namespace std;
 int main() {
     ifstream file("codes.txt");
     string code;
-    while(getline(file, code)) {
+    while(getline(file,code)) {
         cout << code << endl;
         break;
     }
