@@ -8,7 +8,10 @@ int main() {
     string code;
     while(getline(file, code)) {
         cout << code << endl;
+        break;
     }
+    IntBinaryTree tree;
+    tree.displayInOrder();
 
     return 0;
 }
