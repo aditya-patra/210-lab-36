@@ -50,6 +50,10 @@ int main() {
             string valToDelete;
             cout << "Enter value to modify: ";
             cin >> valToDelete;
+            if (!tree.searchNode(valToDelete)) {
+                cout << "Value not found in BST" << endl;
+                continue;
+            }
             string valToAdd;
             cout << "Enter modified value: ";
             cin >> valToAdd;
