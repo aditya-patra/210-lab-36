@@ -14,9 +14,9 @@ int main() {
     }
     // menu function
     int input = -1;
+    // display BST
+    tree.displayInOrder();
     while (input != 5) {
-        // display BST
-        tree.displayInOrder();
         // menu display
         cout << "\nMenu: \n  1 - Add Record\n  2 - Delete Record\n  3 - Search Record\n  4 - Modify Records\n  5 - Exit" << endl;
         cout << "Enter your choice:  ";
