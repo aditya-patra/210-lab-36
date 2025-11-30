@@ -16,10 +16,10 @@ int main() {
             break;
         }
     }
-    tree.displayInOrder();
     int input = -1;
     while (input != 5) {
-        cout << "Menu: \n  1 - Add Record\n  2 - Delete Record\n  3 - Search Record\n  4 - Modify Records\n  5 - Exit" << endl;
+        tree.displayInOrder();
+        cout << "\nMenu: \n  1 - Add Record\n  2 - Delete Record\n  3 - Search Record\n  4 - Modify Records\n  5 - Exit" << endl;
         cout << "Enter your choice:  ";
         cin >> input;
         if (input == 1) {
@@ -60,7 +60,6 @@ int main() {
             tree.remove(valToDelete);
             tree.insertNode(valToAdd);
         }
-        tree.displayInOrder();
     }
     return 0;
 }
