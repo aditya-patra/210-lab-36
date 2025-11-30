@@ -18,7 +18,7 @@ int main() {
     tree.displayInOrder();
     while (input != 5) {
         // menu display
-        cout << "\nMenu: \n  1 - Add Record\n  2 - Delete Record\n  3 - Search Record\n  4 - Modify Records\n  5 - Exit" << endl;
+        cout << "\nMenu: \n  1 - Add Record\n  2 - Delete Record\n  3 - Search Record\n  4 - Modify Records\n  5 - Exit " << endl;
         cout << "Enter your choice:  ";
         cin >> input;
         // add record
