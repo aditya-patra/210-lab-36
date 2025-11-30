@@ -38,7 +38,23 @@ int main() {
             string valToSearch;
             cout << "Enter value to search for: ";
             cin >> valToSearch;
-            tree.searchNode(valToSearch);
+            bool exists = tree.searchNode(valToSearch);
+            if (exists) {
+                cout << "Record exists within BST" << endl;
+            }
+            else {
+                cout << "Record does not exist within BST" << endl;
+            }
+        }
+        else if (input == 4) {
+            string valToDelete;
+            cout << "Enter value to modify: ";
+            cin >> valToDelete;
+            string valToAdd;
+            cout << "Enter modified value: ";
+            cin >> valToAdd;
+            tree.remove(valToDelete);
+            tree.insertNode(valToAdd);
         }
         tree.displayInOrder();
     }
