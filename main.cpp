@@ -27,6 +27,7 @@ int main() {
             cout << "Enter value to add: ";
             cin >> valToAdd;
             tree.insertNode(valToAdd);
+            cout << "Added record: " << valToAdd << endl;
         }
         // remove record
         else if (input == 2) {
@@ -34,6 +35,7 @@ int main() {
             cout << "Enter value to delete: ";
             cin >> valToDelete;
             tree.remove(valToDelete);
+            cout << "Removed record: " << valToDelete << endl;
         }
         // search for record
         else if (input == 3) {
@@ -62,6 +64,7 @@ int main() {
             cin >> valToAdd;
             tree.remove(valToDelete);
             tree.insertNode(valToAdd);
+            cout << "Replace record " << valToDelete << " with record " << valToAdd << endl;
         }
     }
     return 0;
